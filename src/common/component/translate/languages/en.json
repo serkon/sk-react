@@ -1,0 +1,22 @@
+{
+  "hello": "en test",
+  "withParam": "Test {param}",
+  "loading": "Loading...",
+  "content": "Content...",
+  "Login": "Login",
+  "Logout": "Logout",
+  "User_not_found": "User not found",
+  "Invalid_email_or_password": "Invalid email or password",
+  "Username": "Username",
+  "Password": "Password",
+  "Provider": "Provider",
+  "Providers": "Providers",
+  "Columns": "Columns",
+  "A-Z": "A-Z",
+  "Z-A": "Z-A",
+  "Oldest": "Oldest",
+  "Newest": "Newest",
+  "Reset": "Reset",
+  "Hide filters": "Hide filters",
+  "Show filters": "Show filters"
+}

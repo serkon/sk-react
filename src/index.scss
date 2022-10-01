@@ -1,0 +1,28 @@
+@import 'themes/light.scss';
+@import 'themes/grid.scss';
+
+html,
+body,
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+}
+
+html {
+  min-height: 100%;
+  width: 100%;
+
+  body {
+    margin: 0;
+    width: 100%;
+    background-color: var(--color-black-75);
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}

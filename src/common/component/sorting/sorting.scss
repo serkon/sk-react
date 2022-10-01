@@ -1,0 +1,41 @@
+ul.sorting-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  max-height: 274px;
+  overflow: auto;
+  list-style: none;
+  row-gap: 15px;
+  column-gap: 15px;
+
+  li {
+    display: inline-flex;
+
+    input {
+      display: none;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      padding: 5px 10px;
+      border-radius: 4px;
+      color: var(--color-black-dark);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 120%;
+      transition: all 0.4s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        border: 1px solid var(--primary);
+      }
+    }
+
+    input:checked + label {
+      background-color: var(--color-accent-button);
+    }
+  }
+}

@@ -1,0 +1,44 @@
+:root {
+
+  /* Font */
+  --font-family: 'Prompt';
+  --font-family-alternative: 'Commissioner';
+  --font-weight: 400;
+  --font-size: 16px;
+
+  /* colors */
+  --color-brand: #dc0b35;
+  --color-accent-button: #fdbc11;
+  --color-accent-button-hover: #fbcd55;
+  --color-accent-button-pressed: #e9b52f;
+  --color-black-light: #ffffff;
+  --color-black-dark: #2b2b2b;
+  --color-black-semi: #808080;
+  --color-black-25: #adadad;
+  --color-black-50: #f2f2f2;
+  --color-black-75: #fdfdfd;
+  --color-tech-links: #3f53be;
+  --color-tech-links-hover: #3077cc;
+  --color-tech-links-pressed: #004499;
+  --color-menu-hover: #da4261;
+  --color-menu-pressed: #ffcdd7;
+  --color-error: #ec4466;
+
+  /* Grid */
+  --grid-column: 12;
+  --grid-gutter: 1.5rem;
+
+  /* input */
+  --input-height: 33px;
+  --input-padding: 14.5px 16px;
+  --input-font-size: 16px;
+  --input-line-height: 120%;
+  --input-border-radius: 4px;
+
+  /* button */
+  --button-height: 64px;
+  --button-padding: 0 38.5px;
+  --button-font-size: 16px;
+  --button-border-radius: 4px;
+  --button-box-shadow: 0 -2px 18px rgb(128 128 128 / 10%);
+}

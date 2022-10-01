@@ -1,0 +1,11 @@
+{
+  "hello": "en test",
+  "withParam": "Test {param}",
+  "loading": "Loading...",
+  "content": "Content...",
+  "Login": "Login",
+  "User_not_found": "User not found",
+  "Invalid_email_or_password": "Invalid email or password",
+  "Username": "Username",
+  "Password": "Password"
+}

@@ -24,10 +24,9 @@ interface State {
 }
 
 export class Language extends React.Component<Props, State> {
-  content: { [key: string]: string } = {};
-  static contextType = LanguageContext; // alternatif: LanguageContext.contextType = SampleContext;
-  state: State = { language: this.props.default || 'en', content: {}, status: false };
-  props: Props;
+  public static contextType = LanguageContext; // alternatif: LanguageContext.contextType = SampleContext;
+  public state: State = { language: this.props.default || 'en', content: {}, status: false };
+  public props: Props;
 
   constructor(props: Props) {
     super(props);
@@ -83,7 +82,6 @@ export class Language extends React.Component<Props, State> {
    * @param path - String path of the target property
    */
   static getObjectPathValue(value: any, path: string): any {
-    // console.log('getObject: ', value, path);
     let data = value;
 
     if (path) {

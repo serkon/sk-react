@@ -91,5 +91,6 @@
   },
   "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
   "typescript.suggest.paths": false,
-  "javascript.suggest.paths": false
+  "javascript.suggest.paths": false,
+  "docify.programmingLanguage": "javascript"
 }

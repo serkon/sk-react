@@ -22,6 +22,10 @@ export const HomeScreen = (): JSX.Element => {
   const inputRef = React.useRef<HTMLInputElement>(null);
   const dispatch = useDispatch();
   const store = useSelector<RootState>((state: RootState): RootState => state) as RootState;
+  /**
+   * It takes the value of the input field, clears the timeout, sets a new timeout, and then dispatches
+   * the filter_game_by_search_string action with the value of the input field
+   */
   const change = (): void => {
     const value = inputRef.current?.value;
 
@@ -32,11 +36,18 @@ export const HomeScreen = (): JSX.Element => {
       }
     }, 400);
   };
+  /**
+   * It signs out the user and navigates to the home page.
+   */
   const signOut = (): void => {
     Authenticator.signOut(() => {
       navigate('/');
     });
   };
+  /**
+   * It sets the number of columns in the game.
+   * @param {number} columns - number
+   */
   const setColumn = (columns: number): void => {
     dispatch(set_game_columns(columns));
   };

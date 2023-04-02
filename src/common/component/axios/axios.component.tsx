@@ -1,4 +1,4 @@
-import axios, { AxiosResponse, InternalAxiosRequestConfig } from 'axios';
+import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
 import { Authenticator } from 'src/common/component/user/authenticator.component';
 
 export enum AuthorizationHeader {
@@ -26,11 +26,11 @@ export const api = axios.create({
 api.defaults.withCredentials = true;
 
 api.interceptors.request.use(
-  (request: InternalAxiosRequestConfig<any>) => {
+  (request: AxiosRequestConfig<any>) => {
     const token = window.localStorage.getItem(AuthorizationHeader.AccessToken);
     // const headers: AxiosRequestHeaders = Object.assign({}, request.headers);
 
-    if (token) {
+    if (token && request.headers) {
       request.headers['Authorization'] = 'Bearer ' + token;
     }
 
